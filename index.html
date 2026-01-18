@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Charith | Professional Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated-bg"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-dot"></span>
+                SAI CHARITH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills"> Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education"> Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"> Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <p class="glitch-text">Welcome To</p>
+                    <h3 class="main-heading">My Portfolio</h3>
+                    <h1>Sai Charith</h1>
+                    <h2>I build <span class="highlight">innovative solutions</span> for the web</h2>
+                    <p>A passionate developer and creative problem solver specializing in full-stack web development. Transforming ideas into elegant, functional digital experiences with cutting-edge technologies.</p>
+                    
+                    <div>
+                        <button class="btn-hero" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                            <i class="fas fa-code"></i> View Projects
+                        </button>
+                        <button class="btn-hero secondary">
+                            <i class="fas fa-download"></i> Download CV
+                        </button>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="profile-container">
+                        <!-- REPLACE THE URL BELOW WITH YOUR IMAGE URL -->
+                        <img id="profileImage" src="profile.jpg.jpeg" alt="Sai Charith" class="profile-img">
+                        <!-- Example: src="https://i.imgur.com/yourimage.jpg" -->
+                        
+                        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                        <div class="mt-4">
+                            <button class="btn-hero" onclick="document.getElementById('imageUpload').click()" style="margin: 0;">
+                                <i class="fas fa-camera"></i> Upload Photo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">02.</span> About Me</h2>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="skill-card" style="height: 100%;">
+                        <h3 style="color: var(--primary); margin-bottom: 2rem; font-size: 1.8rem;">
+                            <i class="fas fa-user skill-icon" style="font-size: 2rem; margin-right: 1rem;"></i>
+                            Personal Information
+                        </h3>
+                        <div style="display: grid; gap: 1.5rem;">
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake" style="color: var(--primary); margin-right: 1rem; font-size: 1.2rem;"></i>
+                                <strong style="color: var(--lighter);">Date of Birth:</strong>
+                                <span style="color: var(--light); margin-left: 0.5rem;">March 2, 2007</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt" style="color: var(--primary); margin-right: 1rem; font-size: 1.2rem;"></i>
+                                <strong style="color: var(--lighter);">Age:</strong>
+                                <span style="color: var(--light); margin-left: 0.5rem;">18 Years</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 1rem; font-size: 1.2rem;"></i>
+                                <strong style="color: var(--lighter);">Location:</strong>
+                                <span style="color: var(--light); margin-left: 0.5rem;">Vijayawada, Andhra Pradesh</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-language" style="color: var(--primary); margin-right: 1rem; font-size: 1.2rem;"></i>
+                                <strong style="color: var(--lighter);">Languages:</strong>
+                                <span style="color: var(--light); margin-left: 0.5rem;">Telugu, English, Hindi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skill-card" style="height: 100%;">
+                        <h3 style="color: var(--primary); margin-bottom: 2rem; font-size: 1.8rem;">
+                            <i class="fas fa-heart skill-icon" style="font-size: 2rem; margin-right: 1rem;"></i>
+                            Hobbies & Interests
+                        </h3>
+                        <div style="display: grid; gap: 1.2rem;">
+                            <div class="hobby-item" style="display: flex; align-items: center; padding: 1rem; background: rgba(0,212,255,0.05); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-code" style="color: var(--primary); margin-right: 1rem; font-size: 1.5rem;"></i>
+                                <span style="color: var(--lighter); font-size: 1.1rem;">Coding & Programming</span>
+                            </div>
+                            <div class="hobby-item" style="display: flex; align-items: center; padding: 1rem; background: rgba(0,212,255,0.05); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-book-reader" style="color: var(--primary); margin-right: 1rem; font-size: 1.5rem;"></i>
+                                <span style="color: var(--lighter); font-size: 1.1rem;">Learning New Technologies</span>
+                            </div>
+                            <div class="hobby-item" style="display: flex; align-items: center; padding: 1rem; background: rgba(0,212,255,0.05); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-laptop-code" style="color: var(--primary); margin-right: 1rem; font-size: 1.5rem;"></i>
+                                <span style="color: var(--lighter); font-size: 1.1rem;">Web Development</span>
+                            </div>
+                            <div class="hobby-item" style="display: flex; align-items: center; padding: 1rem; background: rgba(0,212,255,0.05); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-gamepad" style="color: var(--primary); margin-right: 1rem; font-size: 1.5rem;"></i>
+                                <span style="color: var(--lighter); font-size: 1.1rem;">Gaming & Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" style="background: var(--dark);">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">03.</span> My Skills</h2>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <div class="skill-name">HTML5</div>
+                        <div class="skill-level">Advanced Level</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <div class="skill-name">CSS3</div>
+                        <div class="skill-level">Advanced Level</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="fab fa-js skill-icon"></i>
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level">Intermediate Level</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="fab fa-python skill-icon"></i>
+                        <div class="skill-name">Python</div>
+                        <div class="skill-level">Intermediate Level</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="fab fa-java skill-icon"></i>
+                        <div class="skill-name">Java</div>
+                        <div class="skill-level">Intermediate Level</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <i class="fab fa-github skill-icon"></i>
+                        <div class="skill-name">Git & GitHub</div>
+                        <div class="skill-level">Intermediate Level</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">04.</span> Education Journey</h2>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="timeline">
+                        <!-- Current Education -->
+                        <div class="education-card" style="background: var(--bg-dark); border: 2px solid var(--primary); border-radius: 15px; padding: 2.5rem; margin-bottom: 2rem; position: relative; transition: all 0.3s ease;">
+                            <div class="status-badge" style="position: absolute; top: -15px; right: 30px; background: var(--primary); color: var(--dark); padding: 8px 20px; border-radius: 20px; font-weight: 600; font-size: 0.85rem;">
+                                Currently Pursuing
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center">
+                                    <div class="edu-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                        <i class="fas fa-graduation-cap" style="font-size: 2.5rem; color: white;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <h3 style="color: var(--primary); font-size: 1.8rem; margin-bottom: 0.5rem;">Bachelor of Computer Applications (BCA)</h3>
+                                    <h4 style="color: var(--lighter); font-size: 1.3rem; margin-bottom: 1rem;">Vignan University</h4>
+                                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; color: var(--light);">
+                                        <div>
+                                            <i class="fas fa-calendar" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                                            <span>2023 - 2026 (Expected)</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-book-open" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                                            <span>Currently in 2nd Year</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                                            <span>Guntur, Andhra Pradesh</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Intermediate -->
+                        <div class="education-card" style="background: rgba(17, 34, 64, 0.6); border: 1px solid rgba(0,212,255,0.3); border-radius: 15px; padding: 2.5rem; margin-bottom: 2rem; transition: all 0.3s ease;">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center">
+                                    <div class="edu-icon" style="width: 80px; height: 80px; background: rgba(0,212,255,0.2); border: 2px solid var(--primary); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                        <i class="fas fa-school" style="font-size: 2.5rem; color: var(--primary);"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <h3 style="color: var(--lighter); font-size: 1.6rem; margin-bottom: 0.5rem;">Intermediate (11th & 12th)</h3>
+                                    <h4 style="color: var(--light); font-size: 1.2rem; margin-bottom: 1rem;">Andhra Loyola College</h4>
+                                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; color: var(--light);">
+                                        <div>
+                                            <i class="fas fa-calendar" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                                            <span>2022 - 2024</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-check-circle" style="color: #00ff88; margin-right: 0.5rem;"></i>
+                                            <span>Completed</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                                            <span>Vijayawada, Andhra Pradesh</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10th Standard -->
+                        <div class="education-card" style="background: rgba(17, 34, 64, 0.6); border: 1px solid rgba(0,212,255,0.3); border-radius: 15px; padding: 2.5rem; transition: all 0.3s ease;">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center">
+                                    <div class="edu-icon" style="width: 80px; height: 80px; background: rgba(0,212,255,0.2); border: 2px solid var(--primary); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                        <i class="fas fa-user-graduate" style="font-size: 2.5rem; color: var(--primary);"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <h3 style="color: var(--lighter); font-size: 1.6rem; margin-bottom: 0.5rem;">Secondary School (10th Standard)</h3>
+                                    <h4 style="color: var(--light); font-size: 1.2rem; margin-bottom: 1rem;">Gujarati Vidyalaya</h4>
+                                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; color: var(--light);">
+                                        <div>
+                                            <i class="fas fa-calendar" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                                            <span>Completed in 2022</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-check-circle" style="color: #00ff88; margin-right: 0.5rem;"></i>
+                                            <span>Completed</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                                            <span>Vijayawada, Andhra Pradesh</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="section-number">05.</span> Featured Projects</h2>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="project-card">
+        
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Website</h3>
+                            <p class="project-desc">A fully responsive e-commerce platform with shopping cart functionality, product filtering, and payment integration.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-desc">A productivity application for managing daily tasks with drag-and-drop functionality and local storage.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">LocalStorage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-desc">Real-time weather application using API integration with detailed forecasts and location-based data.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Python Data Analyzer</h3>
+                            <p class="project-desc">Data analysis tool built with Python for processing and visualizing large datasets with interactive charts.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title"><span class="section-number">06.</span> Get In Touch</h2>
+                <p class="contact-text mt-4">I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>saicharith@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Vijayawada, AP, India</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sai Charith. Designed & Built with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
